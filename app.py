@@ -1,11 +1,4 @@
-import sys
-from wasteDetection.logger import logging
-from wasteDetection.exception import AppException
+from wasteDetection.pipeline.training_pipeline import TrainPipeline
 
-logging.info("This is to check custom log.")
-
-
-try:
-    a = 3/ "3"
-except Exception as e:
-    raise AppException(e, sys)
+obj = TrainPipeline()
+obj.run_pipeline()
