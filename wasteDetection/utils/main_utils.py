@@ -15,8 +15,6 @@ def read_yaml_file(file_path: str) -> dict:
 
     except Exception as e:
         raise AppException(e, sys) from e
-    
-
 
 
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
@@ -34,7 +32,6 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
     except Exception as e:
         raise AppException(e, sys)
     
-
 
 
 def decodeImage(imgstring, fileName):
